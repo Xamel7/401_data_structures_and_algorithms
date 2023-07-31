@@ -1,18 +1,32 @@
-namespace CodeChallenges 
+using System.Runtime.CompilerServices;
+
+namespace CodeChallenges
 {
-    public class Stack
+  public class Node
+  {
+    public T Value { get; set; }
+    public Node Next { get; set; }
+    public Node(T value)
     {
-        public void Push()
-        {
-            
-        }
+      Value = value;
+      Next = null;
     }
 
-    public class Queue
-    {
-        public void Push()
-        {
-            
-        }
-    }
+  }
+  private Node top;
+  private int count;
+  private T defaultValue;
+
+  public class Stack(T defaultValue)
+  {
+    this.defaultValue = defaultValue;
+    top = null;
+    count = 0;
+  }
+
+  public
+
+  public class Queue
+  {
+  }
 }
